@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose a focused improvement to the local personal app.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Which tracking or review task is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the smallest useful change and how to verify it works.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Today and habits
+        - Trading journal
+        - Training and recovery
+        - Reviews and exports
+        - Settings and accessibility
+        - Backup and restore
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data and scope impact
+      description: Does it add sensitive data, network access, or an external service? Do not include personal records or credentials.
